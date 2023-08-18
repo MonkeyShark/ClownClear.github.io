@@ -59,6 +59,26 @@ $(document).ready(function() {
         }]
     });
 
+    $('#campaigns-carousel').slick({
+        dots: true, // Show navigation dots
+        arrows: true, // Show navigation arrows
+        slidesToShow: 3, // Number of slides to show at a time
+        slidesToScroll: 3, // Number of slides to scroll at a time
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                }
+            }]
+    });
+
     $(document).ready(function() {
     $('.read-more-btn').click(function() {
         var description = $(this).siblings('.character-description');

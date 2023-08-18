@@ -357,7 +357,7 @@ nav ul li a:hover {
     margin-bottom: 40px;
 }
 
-/* Character Section Styles */
+/* Gamemode Section Styles */
 .gamemodes-section {
     padding: 40px;
     margin: 0 20px;
@@ -366,6 +366,20 @@ nav ul li a:hover {
 }
 
 .gamemodes-section h2 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Campaign Section Styles */
+.campaigns-section {
+    padding: 40px;
+    margin: 0 20px;
+    background-color: #1111115c;
+    text-align: center;
+}
+
+.campaigns-section h2 {
     color: #fff;
     font-size: 36px;
     margin-bottom: 40px;
