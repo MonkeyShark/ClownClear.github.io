@@ -172,6 +172,17 @@ body::before {
 
 
 
+.media-item {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+.media-item img:not(.zoomed-in-image) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .zoomable-image-modal {
     position: fixed;
