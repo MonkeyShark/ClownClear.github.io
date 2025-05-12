@@ -1,5 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const galleryImages = document.querySelectorAll('.gallery-img.zoomable-image');
+  // Tab Switching
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const galleryTabs = document.querySelectorAll('.gallery-tab');
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      galleryTabs.forEach(tab => tab.classList.remove('active'));
+
+      button.classList.add('active');
+      document.getElementById(button.dataset.tab).classList.add('active');
+    });
+  });
+
+  // Image Zoom
+  const galleryImages = document.querySelectorAll('.gallery-img');
   const modals = document.querySelectorAll('.zoomable-image-modal');
   const modalImages = document.querySelectorAll('.zoomable-image-modal img');
   const closeButtons = document.querySelectorAll('.close-modal');
