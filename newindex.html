@@ -62,83 +62,133 @@
   </section>
 
   <!-- Gallery Section -->
-  <section id="gallery" class="section dark">
+<section id="gallery" class="section dark">
   <div class="container">
     <h2>Media / Prototype Images</h2>
     <div class="gallery-tabs">
-      <button class="tab-button active" data-tab="characters">Characters</button>
+      <button class="tab-button active" data-tab="brand">Art</button>
+      <button class="tab-button" data-tab="characters">Characters</button>
       <button class="tab-button" data-tab="environments">Environments</button>
       <button class="tab-button" data-tab="historical">Historical</button>
     </div>
     <div class="gallery-content">
-      <div class="gallery-tab active" id="characters">
+
+      <div class="gallery-tab active" id="brand">
         <div class="gallery-scroll">
           <div class="gallery-item">
-            <img src="images/media/GameMascot.png" alt="Game mascot" class="gallery-img">
+            <img src="images/media/GameMascot.png" alt="Game mascot" class="gallery-img" data-description="The mascot for Clown Clear.">
             <div class="zoomable-image-modal">
               <span class="close-modal">×</span>
               <img src="" alt="Zoomed Image">
             </div>
+            <div class="tooltip"></div>
           </div>
           <div class="gallery-item">
-            <img src="images/media/CannibalConcept.png" alt="Cannibal concept art" class="gallery-img">
+            <img src="images/media/SteamBanner.png" alt="Game mascot" class="gallery-img" data-description="The mascot for Clown Clear.">
             <div class="zoomable-image-modal">
               <span class="close-modal">×</span>
               <img src="" alt="Zoomed Image">
             </div>
+            <div class="tooltip"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/media/ClownPeak.png" alt="Game mascot" class="gallery-img" data-description="The mascot for Clown Clear.">
+            <div class="zoomable-image-modal">
+              <span class="close-modal">×</span>
+              <img src="" alt="Zoomed Image">
+            </div>
+            <div class="tooltip"></div>
           </div>
         </div>
       </div>
+
+      <div class="gallery-tab" id="characters">
+        <div class="gallery-scroll">
+          <div class="gallery-item">
+            <img src="images/media/CannibalConcept.png" alt="Cannibal concept art" class="gallery-img" data-description="Concept art for the Cannibal special clown.">
+            <div class="zoomable-image-modal">
+              <span class="close-modal">×</span>
+              <img src="" alt="Zoomed Image">
+            </div>
+            <div class="tooltip"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/media/BakerConcept.png" alt="[???] concept art" class="gallery-img" data-description="Concept art for the [???] special clown.">
+            <div class="zoomable-image-modal">
+              <span class="close-modal">×</span>
+              <img src="" alt="Zoomed Image">
+            </div>
+            <div class="tooltip"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/media/CommonEditor.png" alt="Common clown in editor" class="gallery-img" data-description="Editor screenshot of the Common Clown.">
+            <div class="zoomable-image-modal">
+              <span class="close-modal">×</span>
+              <img src="" alt="Zoomed Image">
+            </div>
+            <div class="tooltip"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/media/SpawnerSculpt2.png" alt="Spawner sculpt" class="gallery-img" data-description="Sculpt of the Spawner special clown.">
+            <div class="zoomable-image-modal">
+              <span class="close-modal">×</span>
+              <img src="" alt="Zoomed Image">
+            </div>
+            <div class="tooltip"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/media/SpawnerSculpt.png" alt="Spawner sculpt, headshot" class="gallery-img" data-description="Sculpt of the Spawner special clown.">
+            <div class="zoomable-image-modal">
+              <span class="close-modal">×</span>
+              <img src="" alt="Zoomed Image">
+            </div>
+            <div class="tooltip"></div>
+          </div>
+        </div>
+      </div>
+
       <div class="gallery-tab" id="environments">
         <div class="gallery-scroll">
           <div class="gallery-item">
-            <img src="images/media/EnvironmentDark.png" alt="Abandoned house with fog" class="gallery-img">
+            <img src="images/media/EnvironmentDark.png" alt="Dark outside environment" class="gallery-img" data-description="A dark environment used on the Steam page.">
             <div class="zoomable-image-modal">
               <span class="close-modal">×</span>
               <img src="" alt="Zoomed Image">
             </div>
+            <div class="tooltip"></div>
           </div>
           <div class="gallery-item">
-            <img src="images/media/SpawnerSculpt2.png" alt="Creepy alleyway" class="gallery-img">
+            <img src="images/media/MeleesTest.png" alt="Melee combat test" class="gallery-img" data-description="Custom melee weapon models testing.">
             <div class="zoomable-image-modal">
               <span class="close-modal">×</span>
               <img src="" alt="Zoomed Image">
             </div>
-          </div>
-          <div class="gallery-item">
-            <img src="images/media/CarTest.png" alt="Car test scene" class="gallery-img">
-            <div class="zoomable-image-modal">
-              <span class="close-modal">×</span>
-              <img src="" alt="Zoomed Image">
-            </div>
+            <div class="tooltip"></div>
           </div>
         </div>
       </div>
+
       <div class="gallery-tab" id="historical">
         <div class="gallery-scroll">
           <div class="gallery-item">
-            <img src="images/media/SpawnerSculpt.png" alt="Zombie Clown scene" class="gallery-img">
+            <img src="images/media/DoorTest.png" alt="UE4 build of the game, testing door size." class="gallery-img" data-description="UE4 build of the game, testing door size.">
             <div class="zoomable-image-modal">
               <span class="close-modal">×</span>
               <img src="" alt="Zoomed Image">
             </div>
+            <div class="tooltip"></div>
           </div>
           <div class="gallery-item">
-            <img src="images/media/MeleesTest.png" alt="Melee combat test" class="gallery-img">
+            <img src="images/media/CarTest.png" alt="Car test scene" class="gallery-img" data-description="Prototype of an unfinished concept art piece with a car.">
             <div class="zoomable-image-modal">
               <span class="close-modal">×</span>
               <img src="" alt="Zoomed Image">
             </div>
-          </div>
-          <div class="gallery-item">
-            <img src="images/media/CommonEditor.png" alt="Editor screenshot" class="gallery-img">
-            <div class="zoomable-image-modal">
-              <span class="close-modal">×</span>
-              <img src="" alt="Zoomed Image">
-            </div>
+            <div class="tooltip"></div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>

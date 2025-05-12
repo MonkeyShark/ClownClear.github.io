@@ -13,13 +13,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Image Zoom
+  // Image Zoom and Tooltip Setup
   const galleryImages = document.querySelectorAll('.gallery-img');
   const modals = document.querySelectorAll('.zoomable-image-modal');
   const modalImages = document.querySelectorAll('.zoomable-image-modal img');
   const closeButtons = document.querySelectorAll('.close-modal');
 
   galleryImages.forEach((img, index) => {
+    // Set tooltip text
+    const tooltip = img.parentElement.querySelector('.tooltip');
+    tooltip.textContent = img.dataset.description || img.alt;
+
+    // Zoom functionality
     img.addEventListener('click', () => {
       modals[index].classList.add('active');
       modalImages[index].src = img.src;

@@ -178,7 +178,6 @@ body::before {
 
 
 /* Gallery Section */
-/* Gallery Section */
 .gallery-tabs {
   display: flex;
   justify-content: center;
@@ -229,7 +228,7 @@ body::before {
 .tab-button.active {
   background: #000000;
   color: #fff;
-  border-color: #430000;
+  border-color: #380000;
   animation: flicker 1.5s infinite;
 }
 
@@ -251,7 +250,7 @@ body::before {
   gap: 15px;
   padding: 15px 0;
   scroll-snap-type: x mandatory;
-  scrollbar-color: #ff3333 #2a2a2a;
+  scrollbar-color: #a15597 #2a2a2a;
 }
 
 .gallery-scroll::-webkit-scrollbar {
@@ -294,7 +293,33 @@ body::before {
 .gallery-item:hover .gallery-img {
   filter: grayscale(0%) contrast(140%);
   box-shadow: 0 0 12px rgba(255, 51, 51, 0.5);
-  animation: panImage 8s ease-in-out infinite;
+  animation: panImage 4s ease-in-out infinite;
+}
+
+.gallery-item:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: rgba(20, 20, 20, 0.95);
+  color: #d4d4d4;
+  font-family: 'Kanit', sans-serif;
+  font-size: 0.9rem;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ff3333;
+  box-shadow: 0 0 8px rgba(255, 51, 51, 0.4);
+  text-align: center;
+  z-index: 10;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: normal;
 }
 
 @keyframes panImage {
@@ -363,6 +388,12 @@ body::before {
     width: 120%;
     height: 120%;
   }
+
+  .tooltip {
+    font-size: 0.8rem;
+    padding: 6px 8px;
+    top: -35px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -379,6 +410,12 @@ body::before {
   .tab-button {
     font-size: 0.9rem;
     padding: 8px 15px;
+  }
+
+  .tooltip {
+    font-size: 0.7rem;
+    padding: 5px 6px;
+    top: -30px;
   }
 }
 
