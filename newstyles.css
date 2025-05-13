@@ -462,7 +462,6 @@ body::before {
 }
 
 /* Buttons */
-/* Buttons */
 .btn, .watch-trailer-btn {
   padding: 15px 30px;
   border: 3px solid #4d0000;
@@ -546,9 +545,14 @@ h2 {
   font-size: 3rem;
   margin-bottom: 25px;
   font-family: 'Kanit', sans-serif;
-  color: #af6895;
+  background: linear-gradient(1deg, #333333, #ff66cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   text-shadow: 0 0 5px rgba(255, 51, 51, 0.5);
 }
+
 
 .lead {
   font-size: 1.4rem;
@@ -827,7 +831,6 @@ h2 {
   height: 200px;
   object-fit: cover;
   border-bottom: 2px solid #4d0000;
-  filter: grayscale(20%) contrast(120%);
   transition: filter 0.3s ease, transform 0.3s ease;
   transform: rotate(2deg); /* Default rotation */
   z-index: 1;
@@ -839,7 +842,6 @@ h2 {
 }
 
 .profile-card:hover .profile-img {
-  filter: grayscale(0%) contrast(140%);
   transform: rotate(0deg); /* Straighten on hover */
 }
 
