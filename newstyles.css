@@ -99,7 +99,7 @@ body::before {
 
 /* Hero Section */
 .hero {
-  background: url('images/ClownClearNOBG.png') no-repeat center/cover;
+  background: url('images/ClownClearNOBG.webp') no-repeat center/cover;
   position: relative;
   height: 100vh;
   display: flex;
