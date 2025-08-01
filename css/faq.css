@@ -1,7 +1,7 @@
 /* FAQ Section */
 .faq-section {
   padding: 80px 15px;
-  background: url('/images/stonetiles_001_spec.jpg') repeat, #1d1d1d;
+  background: url('/images/stonetiles.webp') repeat, #1d1d1d;
   background-blend-mode: overlay;
   text-align: center;
 }

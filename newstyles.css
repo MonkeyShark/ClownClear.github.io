@@ -464,7 +464,7 @@ body::before {
   padding: 80px 15px;
   text-align: center;
   position: relative;
-  background: url('images/stonetiles_001_spec.jpg') repeat;
+  background: url('images/stonetiles.webp') repeat;
   background-blend-mode: overlay;
   background-color: #1d1d1d;
 }

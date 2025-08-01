@@ -4,7 +4,7 @@ import socketserver
 
 PORT = 8000
 
-# Change the working directory to the current directory (optional)
+# Change the working directory to the current directory
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # Set up the HTTP server
